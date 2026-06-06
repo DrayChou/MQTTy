@@ -32,6 +32,19 @@ MQTTy it's a native MQTT GUI client written in Rust, that allows you to do what 
     <img src="https://flathub.org/api/badge?svg&locale=en" alt="Get it from Flathub">
   </a>
 
+- ### macOS (unofficial, build from source):
+  There is no pre-built macOS release. If you are on macOS 11 or newer with
+  [Homebrew](https://brew.sh) installed, you can build a local `.app` bundle:
+
+  ```sh
+  ./build-aux/macos-build.sh
+  open build/MQTTy.app
+  ```
+
+  See [docs/build-macos.md](docs/build-macos.md) for the full recipe, the
+  rationale behind each step, and known limitations (the bundle is not
+  portable across Macs and is not code-signed).
+
 ## Translating
 [![Translation state](https://hosted.weblate.org/widget/MQTTy/MQTTy/multi-auto.svg)](https://hosted.weblate.org/engage/MQTTy/)
 
